@@ -38,4 +38,4 @@ logger.info(f"element in the list are {labour_name}")
 
 labour_with_wage = [["Mahesh",500],["Ramesh",400]]
 
-logger.info(f"Labour wage is {labour_with_wage [0][1]}")
+logger.info(f"Labour wage is {labour_with_wage [0][1]}") 
