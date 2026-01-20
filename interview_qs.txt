@@ -1,0 +1,51 @@
+Q1. what is dictionary in Python
+Q2. is dictionary mutable?
+Q3. can we use tuple as a key in dictionary?
+Q4. Difference b/w list.pop() and dictionary.pop?
+Q5. How to get all the keys available in dictionary?
+Q6. is list mutable?
+Q7. is list ordered?
+Q8. is list ordered?
+Q9. what is list index out of range ?
+Q10. How list comprehension works?
+Q11. is tuple mutable?
+Q12. is tuple ordered?
+Q13. How to access element of tuple?
+Q14. How to add element in tuple?
+Q15. How to reverse item of a tuple?
+Q16. is set mutable ?
+Q17. is set ordered ?
+Q18.If lis is converted into set then will order be maintained?
+Q19. will set contains all the element of a list it si created using a list ?
+Q20. Difference between: 
+list and tuple or 
+list and set or 
+set and dictionary or 
+tuple and set ?
+
+List -
+Mutable -> yes
+Ordered -> yes
+can contain duplicate -> yes
+Iterable -> yes
+
+Tuple -
+Mutable -> yes
+Ordered -> yes
+can contain duplicate -> yes
+Iterable -> yes
+
+Dictionary - 
+Mutable -> yes
+Ordered -> not
+can contain duplicate -> no
+Iterable -> yes
+
+Set - 
+Mutable -> yes
+Ordered -> no
+can contain duplicate -> no
+Iterable -> yes
+
+
+

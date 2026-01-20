@@ -38,16 +38,56 @@ Tuples support slicing to extract a portion of the tuple using the syntax tuple[
 
 from loguru import logger
 
-test_tuple = (1, 2, 45,6,2,143,"True","Pawan",2,True)
+# test_tuple = (1, 2, 45,6,2,143,"True","Pawan",2,True)
 # test_tuple[2] = 5  # This will raise a TypeError since tuples are immutable
 
 # new_tuple = (2) # This is not a tuple, it's an integer if we create single valued it will consider it it as a constant value
-if 1 in test_tuple:
-    logger.info("Element is present in the tuple")
+# if 1 in test_tuple:
+#     logger.info("Element is present in the tuple")
 
-logger.info(f"{test_tuple[2:7]}")  # Slicing the tuple
-logger.info(f"{test_tuple.count(2)}")  # Counting occurrences of 2
-logger.info(f"{test_tuple.index(2)}")  # Finding index of first occurrence of 2
-logger.info(f"Length of the tuple is {len(test_tuple)}")  # Length of the tuple
+# logger.info(f"{test_tuple[2:7]}")  # Slicing the tuple
+# logger.info(f"{test_tuple.count(2)}")  # Counting occurrences of 2
+# logger.info(f"{test_tuple.index(2)}")  # Finding index of first occurrence of 2
+# logger.info(f"Length of the tuple is {len(test_tuple)}")  # Length of the tuple
 # new_tuple = (2,)  # This is a tuple with a single element
 # print(type(new_tuple))
+
+'''
+Tuple questions 
+Q1 Write a program to return entire elemenets as a tuple which can have a list in the tuple inputs ?
+Example -:
+Input:- test_tuple = ([5,6],[6,7,8,9], [3])
+Output:- (5,6,6,7,8,9,3)
+Also mention about the time and space complexity ?
+'''
+# result = []
+
+# test_tuple = ([5,6],[6,7,8,9], [3])
+
+# for lst in test_tuple:
+#     result.extend(lst)
+
+# print(result)  
+
+
+
+'''
+Q2. Write a program to return a tuple which is exponential of given two tuples as an input 
+
+Example:- 
+
+Input:- tuple1 = (10,2,3,5)
+tuple2 = (3,6,4,3)
+Output:- (1000,64,81,125))
+'''
+
+result = []
+tuple1 = (10,2,3,5)
+tuple2 = (3,6,4,3)
+
+
+for number in range(len(tuple1)):
+    result.append(tuple1[number] ** tuple2[number])
+
+final_tuple = tuple(result)
+print(final_tuple)
